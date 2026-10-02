@@ -17,13 +17,17 @@
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
-  "CLOCK_PERIOD": 20,
+  "CLOCK_PERIOD": 15,
 
   "//": "Stop the resizer using delay cells and the weakest buffer for fanout repair.",
   "EXTRA_EXCLUDED_CELLS": ["sky130_fd_sc_hd__clkdlybuf*", "sky130_fd_sc_hd__dlygate*", "sky130_fd_sc_hd__dlymetal*", "sky130_fd_sc_hd__buf_1", "sky130_fd_sc_hd__clkbuf_1"],
 
   "//": "Repair max slew and max cap after global routing. Off by default in TT.",
   "RUN_POST_GRT_DESIGN_REPAIR": 1,
+
+  "//": "Timing-driven synthesis and an extra setup repair pass after global routing, to reach 66 MHz (the TT clock pad limit).",
+  "SYNTH_STRATEGY": "DELAY 0",
+  "RUN_POST_GRT_RESIZER_TIMING": 1,
 
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
