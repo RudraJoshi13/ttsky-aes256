@@ -5,7 +5,7 @@ project:
   discord:      ""
   description:  "Unmodified secworks AES core (FIPS-197, 128/256-bit keys, encrypt and decrypt) behind a byte-wide register interface"
   language:     "Verilog"
-  clock_hz:     50000000
+  clock_hz:     38000000
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "6x4"
