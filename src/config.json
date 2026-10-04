@@ -25,6 +25,10 @@
   "//": "Repair max slew and max cap after global routing. Off by default in TT.",
   "RUN_POST_GRT_DESIGN_REPAIR": 1,
 
+  "//": "Post-GRT repair margins 50% (default 10), as in the heavy AES closure: routed wires load more than GRT estimates.",
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 50,
+  "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 50,
+
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
   "GRT_RESIZER_HOLD_SLACK_MARGIN": 0.05,
