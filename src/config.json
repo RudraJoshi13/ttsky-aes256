@@ -35,6 +35,9 @@
   "INSERT_ECO_BUFFERS": [{"target": "_25175_/B1", "buffer": "sky130_fd_sc_hd__buf_4", "placement": [400.0, 465.0]}],
   "INSERT_ECO_DIODES": [{"target": "fanout2005/A"}, {"target": "fanout1965/A"}],
 
+  "//": "Signoff STA only: Difetto AES-256 signoff limits (fanout 20, 1.5 ns library slew, per-pin liberty cap). PnR still uses base.sdc.",
+  "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
+
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
   "GRT_RESIZER_HOLD_SLACK_MARGIN": 0.05,
